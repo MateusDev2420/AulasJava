@@ -11,16 +11,16 @@ public class Exercício2 {
         int valorPorHora;
 
         // Solicita e lê e quantidade de horas trabalhadas
-        System.out.println("Digite a quantidade de horas trabalhadas:");
+        System.out.println("Digite a quantidade de horas trabalhadas: ");
         horasTrabalhadas = scanner.nextInt();
 
         // Solicita e lê o valor pago por hora
-        System.out.println("Digite o valor pago pro hora");
+        System.out.println("Digite o valor pago por hora: ");
         valorPorHora = scanner.nextInt();
 
         // Calcule o salário total
 
-        int salario = horasTrabalhadas * valorPorHora;
+        int salario = horasTrabalhadas  * valorPorHora;
 
         // Exibe resultado
         System.out.println("O salário total é " + salario);
