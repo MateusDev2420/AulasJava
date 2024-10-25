@@ -14,7 +14,7 @@ public class Exercício3 {
             do {
                 fatorial *= i--;
 
-            } while (i > 1);
+            } while (i > 1 );
 
             System.out.println("O fatorial de " + numero + " é: " + fatorial);
 
