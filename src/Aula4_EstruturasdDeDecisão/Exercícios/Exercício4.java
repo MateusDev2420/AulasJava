@@ -20,7 +20,7 @@ public class Exercício4 {
             System.out.println("Sua comissão será de: " + comissão);
 
 
-        } else {
+        } else  {
                 comissão = vendas * 0.15;
                 System.out.println("Sua comissão será de: "  + comissão);
 
