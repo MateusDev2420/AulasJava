@@ -1,4 +1,4 @@
-package Aula4_EstruturasdDeDecisão.Exercícios;
+package Aula4_EstruturasdDeDecisão;
 
 import java.util.Scanner;
 
