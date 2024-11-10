@@ -5,23 +5,29 @@ import java.util.Scanner;
 public class Exercício9 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Double Horario;
+        int horário;
         System.out.println("Digite o horário atual: ");
-        Horario = scanner.nextDouble();
+        horário = scanner.nextInt();
 
-        if (Horario >= 5 && Horario <= 12) {
-            System.out.println("Agora são " + Horario + "hrs da Manhã.");
-        } else if (Horario > 12 && Horario <= 18) {
-            System.out.println("Agora são " + Horario + "hrs da Tarde.");
-        } else if (Horario > 18 && Horario <= 22) {
-            System.out.println("Agora são " + Horario + "hrs da Noite.");
-        } else if ((Horario > 22 && Horario <= 23) || (Horario >=0 && Horario <5)) {
-            System.out.println("Agora são " + Horario + "hrs da Madrugada.");
+        if (horário >= 5 && horário < 12) {
+            System.out.println("Agora são " + horário + "hrs da Manhã");
+
+        } else if (horário >= 12 && horário < 18) {
+            System.out.println("Agora são " + horário + "hrs da Tarde");
+
+        } else if (horário >= 18 && horário < 22) {
+            System.out.println("Agora são " + horário + "hrs da Noite");
+
+        } else if (horário >= 22 && horário <= 23 || horário >= 0 && horário < 5) {
+            System.out.println("Agora são " + horário + "hrs da Madrugada");
 
         } else {
-            System.out.println("Esse horário não existe, (O dia tem somente 24horas");
+            System.out.println("Número Inválido!! (O dia tem somente 24 horas");
+
         }
         scanner.close();
     }
+
 }
+
 
