@@ -25,15 +25,15 @@ public class Exercício10 {
 
         switch (ValorRecebido) {
             case 1:
-                ValorConvertido = ValorRecebido/TaxaDolar;
+                ValorConvertido = ValorReais/TaxaDolar;
                 System.out.println("O seu Valor em Dólar será de: " + ValorConvertido + "USD.");
                 break;
             case 2:
-                ValorConvertido = ValorRecebido/TaxaEuro;
+                ValorConvertido = ValorReais/TaxaEuro;
                 System.out.println("O seu Valor em Euro será de: " + ValorConvertido + "€.");
                 break;
             case 3:
-                ValorConvertido = ValorRecebido/TaxaLibra;
+                ValorConvertido = ValorReais/TaxaLibra;
                 System.out.println("O seu Valor em Libra será de: " + ValorConvertido + "£");
                 break;
 
