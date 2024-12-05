@@ -1,62 +1,107 @@
-package Desafios;
-
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Desafio2 {
+    static Scanner scanner = new Scanner(System.in);
+    static String[] cabecalho = {"id", "nome", "telefone", "email"};
+    static String[][] matrizCadastro = {{"", ""}};
+
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        matrizCadastro[0] = cabecalho;
+
         String menu = """
-                 __________________________________________
-                |      Escolha uma opção:                  |
-                |                                          |
-                |          1 - Exibir Cadastro Completo    |
-                |          2 - Exibir Cadastro Completo    |
-                |          3 - Exibir Cadastro Completo    |
-                |          4 - Exibir Cadastro Completo    |
-                |          5 - Sair                        |
-                |__________________________________________|                                        |
+                ________________________________________________
+                |  ESCOLHA UMA OPÇÃO:                           |
+                |       1 - EXIBIR CADASTRO COMPLETO            |
+                |       2 - INSERIRIR NOVO USUÁRIO              |
+                |       3 - ATUALIZAR CADASTRO POR ID           |
+                |       4 - DELETAR CADASTRO POR ID             |
+                |       5 - SAIR                                |
+                |_______________________________________________|               
+                
                 """;
+
+        int opcão = 0;
         do {
+
             System.out.println(menu);
             int opcao = scanner.nextInt();
             scanner.nextLine();
+
             switch (opcao) {
+
                 case 1:
                     exibirUsuario();
                     break;
+
+
                 case 2:
                     cadastrarUsuario();
+
                     break;
+
                 case 3:
                     atualizarUsuario();
                     break;
+
                 case 4:
-                    deletarrUsuario();
+                    deletarUsuario();
                     break;
+
                 case 5:
-                    System.out.println("Fim do Programa");
+                    System.out.println("_________FIM DO PROGRAMA__________");
                     break;
+
                 default:
-                    System.out.println("Opção Inválida!");
-
+                    System.out.println("Opcão invalida!!!");
             }
-            while (opcao != 5) ;
+        } while (opcão == 5);
+    }
+
+    public static void exibirUsuario() {
+        System.out.println("exibir");
+    }
+
+    private static void cadastrarUsuario() {
+
+        System.out.println("quantas pessoas você deseja cadastrar: ");
+        int qtPessoas = scanner.nextInt();
+        scanner.nextLine();   // ISSO TA SERVINDO PRA CONSUMIR O \n
+        String[][] matrizCadastro = new String[qtPessoas + 1][cabecalho.length];   // talvez is esteja no lugar errado
+
+        String[][] novamatrizCadastro = new String[matrizCadastro.length + qtPessoas][cabecalho.length];
 
 
-            public static void exibirUsuario () {
-                System.out.println("Exibir");
-            }
+        for (int linha = 0; linha < matrizCadastro[0].length; linha++) {
 
-            public static void cadastrarUsuario () {
-                System.out.println("Cadastrar");
-            }
+            novamatrizCadastro[linha] = Arrays.copyOf(matrizCadastro[linha], matrizCadastro[linha].length);
 
-            public static void atualizarUsuario () {
-                System.out.println("Atualizar");
-            }
+        }
 
-            public static void deletarrUsuario () {
-                System.out.println("Deletar");
+
+        for (int linhas = matrizCadastro.length; linhas < novamatrizCadastro.length; linhas++) {
+            System.out.print("Preencha as informações a seguir: ");
+            for (int linha = matrizCadastro.length; linha < novaMatriz.length; linha++) {
+                System.out.println(cabecalho[0]+"-" + linha);
+                novaMatriz[linha][0] = String.valueOf(linha); // Converter valor inteiro para string
             }
         }
 
+        String tabela = "";
+        for (String[] linhas : matrizCadastro) {
+            for (int colunas = 0; colunas < matrizCadastro[0].length; colunas++) {
+                tabela += linhas[colunas] + "\t\t";
+
+            }
+            tabela += "\n";
+        }
+        System.out.println(tabela);
+
+    }
+
+    public static void atualizarUsuario() {
+    }
+
+    public static void deletarUsuario() {
+    }
+}
