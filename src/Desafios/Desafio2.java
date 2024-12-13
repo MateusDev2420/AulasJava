@@ -150,6 +150,7 @@ public class Desafio2 {
             salvarDadosNoArquivo();
 
         }
+
         public static void salvarDadosNoArquivo(){
             try (BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(arquivoBancoDeDados))){
                 for (String[]linha: matrizCadastro){
