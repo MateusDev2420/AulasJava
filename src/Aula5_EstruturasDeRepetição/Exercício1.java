@@ -1,4 +1,4 @@
-package Aula5_EstruturasDeRepetição.Exercícios;
+package Aula5_EstruturasDeRepetição;
 
 public class Exercício1 {
     public static void main(String[] args) {
