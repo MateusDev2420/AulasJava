@@ -14,6 +14,6 @@ public class Exercício8 {
             System.out.println("numero " + i + ": ");
             num = scanner.nextInt();
         }
-    }
+     }
 }
 
