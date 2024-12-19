@@ -1,13 +1,12 @@
 package EXWH;
-
 public class EXWH1 {
     public static void main(String[] args) {
-        int i = 1;
+        int contador = 1;
 
-        while (i <= 10) {
-            System.out.println(i);
-            i++;
+        while (contador <=10){
+            System.out.println(contador);
+            contador++;
         }
     }
-}
+        }
 
