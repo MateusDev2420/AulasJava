@@ -9,15 +9,13 @@ public class EXWH2 {
         int N;
         int soma = 0;
 
-        System.out.println("Digite um número N: ");
+        System.out.println("Digite o valor de N");
         N = scanner.nextInt();
 
-        while (i <= N) {
+        while (i <= N){
             soma = soma + i;
             i++;
         }
-        System.out.println("A soma dos números de 1 a " + N + "   é = " + soma);
-        scanner.close();
-
+        System.out.println("O resultado da soma entre o número 1 ao número N é = " + soma);
     }
 }

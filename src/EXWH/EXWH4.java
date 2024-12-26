@@ -2,14 +2,17 @@ package EXWH;
 
 public class EXWH4 {
     public static void main(String[] args) {
-        int i = 5;
-        int multiplicador = 1;
+        int i = 1;
+        int mutiplicador = 5;
         int resultado;
 
-        while (multiplicador <= 10) {
-            resultado = i * multiplicador;
-            System.out.println(i + "X" + multiplicador +" = " + resultado);
-            multiplicador ++;
+        while (i <= 10) {
+            resultado = mutiplicador * i;
+            System.out.println(mutiplicador + "X" + i + " = " + resultado);
+            i++;
+
+
         }
     }
 }
+
