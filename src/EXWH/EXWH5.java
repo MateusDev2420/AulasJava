@@ -10,7 +10,7 @@ public class EXWH5 {
             soma = soma + i;
             i++;
         }
-        System.out.println("O valor da soma dos números pares ntre 1 a 20 é = " + soma);
+        System.out.println("O valor da soma dos números pares entre 1 a 20 é = " + soma);
     }
 }
 

@@ -9,26 +9,24 @@ public class Exercício3 {
         int fatorial = 1;
         int i = 1;
 
+
         System.out.println("Digite um número inteiro positivo: ");
         NI = scanner.nextInt();
 
-        if (NI <= 0) {
-            System.out.println("Por favor, insira um número inteiro positivo.");
+        if (NI < 0) {
+            System.out.println("Número Inválido!! ");
 
         } else {
-            System.out.print("Cálculo do fatorial (decrescente): ");
-
             do {
-                fatorial = fatorial * NI;
-                System.out.print(NI + " ");
-                NI--;
+                fatorial = fatorial * i;
+                i++;
 
-            } while (NI >= 1);
-            System.out.println();
+            } while (i <= NI);
+
         }
-
-        System.out.println("O fatorial de " + NI +  " é: " + fatorial);
+        System.out.println("O fatorial de " + NI + " é = " + fatorial);
 
         scanner.close();
     }
+
 }
